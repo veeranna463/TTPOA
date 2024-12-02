@@ -1,0 +1,85 @@
+/* Background image settings */
+.showcase-section {
+    background-image: url('/path-to-your-background-image.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;  /* Set padding to 20px */
+    margin-top: 20px; /* Optional: Adjust margin if needed for spacing from top */
+    color: #fff;
+    text-align: center;
+  }
+  
+  .showcase-title {
+    font-size: 4vw;
+    margin-bottom: 20px; /* Adjusting the bottom margin */
+  }
+  
+  .showcase-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Adjusting the gap between items */
+  }
+  
+  .showcase-item {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px; /* Set padding to 20px */
+    border-radius: 10px;
+    position: relative;
+  }
+  
+  .showcase-number {
+    background-color: #ff4500;
+    font-size: 3vw;
+    font-weight: bold;
+    color: #fff;
+    padding: 10px; /* Adjust the padding for number */
+    border-radius: 50%;
+    width: 40px; /* Set fixed width for better alignment */
+    height: 40px; /* Set fixed height for better alignment */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -20px; /* Adjust this value to position the number */
+    left: -20px; /* Adjust this value to position the number */
+  }
+  
+  .showcase-content {
+    margin-left: 50px; /* Increased margin for more spacing */
+  }
+  
+  .showcase-content h3 {
+    font-size: 2.5vw;
+    margin-bottom: 10px; /* Adjusting bottom margin */
+  }
+  
+  .showcase-content p {
+    font-size: 1.5vw;
+  }
+  
+  /* Responsive design for mobile */
+  @media (max-width: 768px) {
+    .showcase-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .showcase-number {
+      width: 60px; /* Adjusting width for mobile */
+      height: 60px; /* Adjusting height for mobile */
+      font-size: 4vw; /* Adjusting font size for mobile */
+    }
+  
+    .showcase-content {
+      margin-left: 20px; /* Adjust margin for mobile */
+    }
+  
+    .showcase-content h3 {
+      font-size: 4vw; /* Adjusting font size for mobile */
+    }
+  
+    .showcase-content p {
+      font-size: 2.5vw; /* Adjusting font size for mobile */
+    }
+  }
+  
